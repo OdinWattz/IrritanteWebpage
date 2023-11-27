@@ -1,0 +1,87 @@
+/* main coding */
+
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 6% 10% 10% 20% 50%;
+    grid-template-rows: 20vb 15vb 20vb 10vb 10vb 10vb 11vb;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    gap: 1%;
+    background-color: rgb(255, 255, 255);
+}
+
+.grid-item{
+    display: flex;
+    justify-items: flex-start;
+    align-items: flex-start;
+    text-align: start;
+}
+
+
+
+.item-phone{
+    background-image: url(../images_icons/iphone.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: 5;
+    grid-row: span 7;
+    background-color: lightskyblue;
+}
+
+.item-phone-mini{
+    display: none;
+    background-image: url(../images_icons/iphone.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: lightskyblue;
+}
+
+.item-logo{
+    display: flex;
+    grid-column: 2;
+    justify-items: start;
+}
+
+.item-header{
+    grid-column: 2/ span 3;
+    grid-row: 3;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.text-small{
+    grid-row: 4;
+    grid-column: 2/ span 3;
+    font-size: 20px;
+}
+
+.icon-google{
+    grid-column: 2;
+    grid-row: 5;
+    height: 100%;
+    width: 100%;
+}
+
+.icon-apple{
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.text-smaller{
+    font-size:15px;
+    grid-column: 2/ span 3;
+    grid-row: 6;
+}
+
+
