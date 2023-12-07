@@ -40,6 +40,8 @@
     margin-top: 8%;
     height: 80vh;
     width: auto;
+    grid-column: 5;
+    grid-row: span 7;
 }
 @keyframes rotate-btn {
     0% {
@@ -58,19 +60,18 @@
 }
 
 .item-phone{
-    background-image: url(../images_icons/iphone.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     grid-column: 5;
     grid-row: span 7;
-    background-color: #87cefa;
+    background-color: #009dff;
     transition: 0.5s;
 }
 
 .item-phone-mini{
     display: none;
-    background-image: url(../images_icons/iphone.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

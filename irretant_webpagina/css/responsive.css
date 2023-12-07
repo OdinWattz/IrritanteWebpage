@@ -28,6 +28,7 @@
 
     .grid_container{
         grid-template-rows: 10vb 15vb 10vb 27vb 10vb 10vb 18vb;
+        grid-template-columns: 7% 10% 10% 20% 50%;
     }
 
     .icon-apple{
@@ -58,10 +59,11 @@
 
 /* 0 till 400px (phones) */
 
-@media(max-width: 400px){
+@media(max-width: 550px){
     /* original last value is 18vb */
     .grid_container{                   
         grid-template-rows: 5vb 15vb 20vb 23vb 10vb 10vb 10vb;
+        grid-template-columns: 7% 10% 10% 20% 50%;
     }
 
     .icon-google:hover{
@@ -70,7 +72,10 @@
     }
 
     .item-phone{
-        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     .item-phone-moving{
@@ -99,26 +104,22 @@
         grid-column: 1/ span 5;
         grid-row: 3;
         font-size: 30px;
-        padding: 5%;
     }
 
     .text-small{
         grid-row: 4;
         grid-column: 1/ span 5;
         font-size: 20px;
-        padding: 5%;
     }
 
     .icon-apple{
-        grid-column: 1/ span 4;
+        grid-column: 1/ span 2;
         grid-row: 5;
-        padding: 5%;
     }
 
     .icon-google{
-        grid-column: 5;
+        grid-column: 3/ span 4;
         grid-row: 5;
-        padding: 5%;
     }
 
     .text-smaller{

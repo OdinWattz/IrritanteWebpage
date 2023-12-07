@@ -26,7 +26,7 @@ function cloneAndPositionButton() {
 }
 
 
-function iphone(){
+function backgroundChange(){
 let i = 1;
 
 if(i = 1){
