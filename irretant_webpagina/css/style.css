@@ -36,7 +36,26 @@
     text-align: start;
 }
 
+.item-phone img {
+    margin-top: 8%;
+    height: 80vh;
+    width: auto;
+}
+@keyframes rotate-btn {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
 
+.item-phone img:hover {
+    animation: rotate-btn .1s linear infinite;
+  -webkit-animation: rotate-btn .1  s linear infinite;
+    box-sizing: border-box;
+    max-width: 100%;
+}
 
 .item-phone{
     background-image: url(../images_icons/iphone.png);
