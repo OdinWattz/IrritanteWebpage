@@ -37,6 +37,7 @@
 }
 
 .item-phone img {
+    display: flex;
     margin-top: 8%;
     height: 80vh;
     width: auto;
@@ -67,14 +68,13 @@
     grid-column: 5;
     grid-row: span 7;
     background-color: #009dff;
-    transition: 0.5s;
+    animation-duration: infinite;
+    animation: phone  linear infinite;
+  -webkit-animation: phone linear infinite;
 }
 
 .item-phone-mini{
     display: none;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     background-color: lightskyblue;
     transition: 0.5s;
 }
@@ -107,7 +107,7 @@
     grid-column: 2;
     grid-row: 5;
     height: 43px;
-    width: 128px;
+    width: 100%;
 }
 
 svg{
@@ -124,6 +124,30 @@ svg{
     height: 43px;
 }
 
+.button_issue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-column: 2;
+    grid-row: 5;
+    width: 128px;
+}
+
+.button_issue2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-column: 3;
+    grid-row: 5;
+    width: 128px;
+}
+
+svg{
+    width: 100%;
+}
+
 .background{
     background-color: black;
 }
@@ -131,6 +155,7 @@ svg{
 .icon-apple{
     animation-name: apple;
     animation-duration: infinite;
+    
 }
 .text-smaller{
     font-size:15px;
