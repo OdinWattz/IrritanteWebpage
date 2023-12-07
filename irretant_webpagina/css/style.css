@@ -1,10 +1,20 @@
 /* main coding */
 
-body, html{
+*{
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+#clonedButton{
+    position: absolute;
+    background: none;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .grid_container{
@@ -35,7 +45,8 @@ body, html{
     background-repeat: no-repeat;
     grid-column: 5;
     grid-row: span 7;
-    background-color: lightskyblue;
+    background-color: #87cefa;
+    transition: 0.5s;
 }
 
 .item-phone-mini{
@@ -45,6 +56,12 @@ body, html{
     background-size: contain;
     background-repeat: no-repeat;
     background-color: lightskyblue;
+    transition: 0.5s;
+}
+
+.item-phone:hover, .item-phone-mini:hover{
+    animation-name: phone;
+    animation-duration: 6s;
 }
 
 .item-logo{
@@ -69,19 +86,64 @@ body, html{
 .icon-google{
     grid-column: 2;
     grid-row: 5;
-    height: 100%;
-    width: 100%;
+    height: 43px;
+    width: 128px;
+}
+
+svg{
+    height: 43px;
+    width: 128px;
 }
 
 .icon-apple{
     grid-column: 3;
     grid-row: 5;
+    border: none;
+    background-color: white;
+    width: 128px;
+    height: 43px;
 }
 
+.background{
+    background-color: black;
+}
+
+.icon-apple{
+    animation-name: apple;
+    animation-duration: infinite;
+}
 .text-smaller{
     font-size:15px;
     grid-column: 2/ span 3;
     grid-row: 6;
 }
 
+/* animaties en bewegengen */
 
+.item-logo:hover{
+    animation-name: logo;
+    animation-duration: 0.1s;
+
+}
+
+.icon-google:hover{
+    grid-row: 2;
+
+}
+
+@keyframes logo {
+    from {grid-column: 2; color: yellow;}
+    to {grid-column: 4; color: greenyellow;}
+}
+
+@keyframes apple{
+    from {background-color: yellow;}
+    to {background-color: blue;}
+}
+
+@keyframes phone{
+    25% {background-color: white;}
+    50% {background-color: green;}
+    75% {background-color: yellow;}
+    100% {background-color: black;}
+}

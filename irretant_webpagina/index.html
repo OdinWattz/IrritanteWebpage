@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <section class="grid_container">
-        <div class="grid-item item-phone"></div>
+    <section class="grid_container" id="section">
+        <div class="grid-item item-phone" id="phone" onclick="phone()"></div>
 
         <div class="grid-item item-logo">
             <img class="logo-position" src="images_icons/logo.svg" alt="">
@@ -207,7 +207,7 @@
         <!-- end google icon link -->
 
         <!-- icon apple link -->
-        <a href="#" class="grid-item icon-apple">
+        <button class="grid-item icon-apple" id="appleIcon" onclick="iphone()">
             <svg xmlns="http://www.w3.org/2000/svg" width="176" height="60" viewBox="0 0 176 60">
                 <g fill="none" fill-rule="evenodd">
                     <rect width="176" height="60" fill="#1E222B" rx="6" />
@@ -216,7 +216,7 @@
                         fill="#FFF" />
                 </g>
             </svg>
-        </a>
+        </button>
 
         <!-- end icon apple link -->
 
@@ -228,6 +228,8 @@ Sip news is build by Product Hunt and its awesome community
 
         <div class="grid-item item-phone-mini"></div>
     </section>
+
+    <script src="java/java.js"></script>
 
 </body>
 
