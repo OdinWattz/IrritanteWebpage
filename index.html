@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="responsive.css">
-    <link rel="script" href="script.js">
+   
     <title>Onepager</title>
 </head>
 <body>
     <div class="grid-container">
+        <div id="cookiePopup" class="hide">
+            <img src="cookie.png" />
+            <p>
+              Our website uses cookies to provide your browsing experience and
+              relevant information. Before continuing to use our website, you agree &
+              accept of our <a href="#">Cookie Policy & Privacy.</a> If you decline there is a Possibility of non functioning elements.
+            </p>
+            <button id="acceptCookie">Accept</button>
+            <button id="rejectCookie">Decline</button>
+          </div>
         <div class="grid-item item1"></div>
-        <div class="grid-item item2"><a class="img"><img src="SlideShow-Iphone.gif" alt="Slideshow" id="gif"></a></div>
-        <div class="grid-item item3"><img src="logo.svg" alt="logo">
+        <div class="grid-item item2">
+            <a class="img" onclick="playMusic()">
+                <img src="SlideShow-Iphone.gif" alt="Slideshow" id="gif">
+            </a>
+        </div>
+        <div class="grid-item item3"><a><img src="logo.svg" alt="logo"></a>
         <h1>Daily Tappable tech news and stories</h1>
         <p>Every weekday Sip surfaces the most interesting and important tech stories of the day, to breaking news to profiles on favorite tech products.</p>
         <img src="download-ios.svg" alt="ios">
@@ -21,9 +35,8 @@
         </div>
         <div class="grid-item item4"></div>
     </div>
-    <audio controls autoplay>
-        <source src="460432__jay_you__music-elevator.wav" type="audio/wav">
-      </audio>
 </div>
-</body>
+<script src="script.js"></script>
+<script src="sounds.js"></script>
+</body> 
 </html>
