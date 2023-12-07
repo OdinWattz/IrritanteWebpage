@@ -1,13 +1,12 @@
 let popUp = document.getElementById("cookiePopup");
 
-//When user clicks the accept button
+//Wanneer er dus op accept geklikt wordt
 document.getElementById("acceptCookie").addEventListener("click", () => {
-  //Create date object
+// Hoelang de cookie geldig is: 5 minuten
   let d = new Date();
-  //Increment the current time by 1 minute (cookie will expire after 1 minute)
-  d.setMinutes(2 + d.getMinutes());
+  d.setMinutes(5 + d.getMinutes());
 
-  //Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
+  //De naam van de cookie en hoelang die geldig is
   document.cookie = "myCookieName=ditismijncookie_Odin; expires = " + d + ";";
 
   //Hide the popup
@@ -15,14 +14,16 @@ document.getElementById("acceptCookie").addEventListener("click", () => {
   popUp.classList.remove("show");
 });
 
-//When user clicks the reject button
+//Wanneer er op reject geklikt wordt
+// De reject doet eigenlijk helemaal niks want de pop up verdwijnt toch niet, al druk je op accept
+// Express gedaan natuurlijk
 document.getElementById("rejectCookie").addEventListener("click", () => {
     //Hide the popup
     popUp.classList.add("hide");
     popUp.classList.remove("show");
     });
 
-//Check if cookie is already present
+// Die checkt of de cookie al bestaat
 const checkCookie = () => {
   //Read the cookie and split on "="
   let input = document.cookie.split("=");
@@ -39,7 +40,7 @@ const checkCookie = () => {
 };
 
 
-//Check if cookie exists when page loads
+//Checkt of de cookie al bestaat wanneer de pagina laad
 window.onload = () => {
   setTimeout(() => {
     checkCookie();

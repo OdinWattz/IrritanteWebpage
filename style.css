@@ -1,4 +1,4 @@
-@keyframes gradient {
+/* @keyframes gradient {
     0% {
      background-color: red;
     }
@@ -17,7 +17,7 @@
     100% {
         background-color: indigo;
     }
-    }
+    } */
 
 html,
 body {
@@ -31,11 +31,11 @@ body {
     display: grid;
     grid-template-columns: 10vw 10vw 10vw 20vw 50vw;
     grid-template-rows: 20vh 60vh 20vh;
-    /* background-color: white; */
+    background-color: white;
 }
 
 .grid-item {
-    /* background-color: white; */
+    background-color: white;
     text-align: center;
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -53,8 +53,8 @@ body {
 .item2 {
     grid-column: 5;
     grid-row: 1 / span 3;
-    /* background-color: #c52146; */
-    animation: gradient 5s infinite;
+    background-color: #c52146;
+    /* animation: gradient 5s infinite; */
 }
 
 .item2 img {
@@ -161,3 +161,24 @@ body {
       bottom: 0;
     }
   }
+
+
+  .flipX {
+    animation: 0.8s anim-flipX ease infinite;
+  }
+  @keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+    100% {
+      /* animate nothing to pause animation at the end */
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+  }
+  
