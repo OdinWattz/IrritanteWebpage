@@ -30,6 +30,7 @@
 }
 
 .grid-item{
+    animation: 0.8s anim-flipX ease infinite;
     display: flex;
     justify-items: flex-start;
     align-items: flex-start;
@@ -177,39 +178,42 @@ svg{
     background-color: #ffffff;
     position: absolute;
     font-size: 14px;
-    width: 70vw;
-    max-width: 42.85em;
+    max-width: 500px;
+    max-height: 275px;
     box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
     font-family: "Poppins", sans-serif;
     text-align: justify;
-    line-height: 1.8em;
     padding: 2em 1.4em;
     border-radius: 6px;
     transition: all 0.5s ease-in;
   }
   #cookiePopup img {
     display: block;
-    width: 3.75em;
-    transform: translateZ(0);
-    position: relative;
+    width: 10%;
+    height: 20%;
     margin: auto;
   }
   #cookiePopup p {
     text-align: center;
-    margin: 1.4em 0;
+    margin: 25px 0;
+    height: 50px;
   }
   #cookiePopup button {
     background-color: #6859fe;
     border: none;
     color: #ffffff;
     font-size: 1.2em;
-    padding: 1em 1.4em;
+    padding: 0;
     display: block;
-    position: relative;
     margin: auto;
     border-radius: 5px;
+    width: 50px;
+    height: 50px;
   }
   #cookiePopup a {
+    margin: 0;
+    padding: 0;
+    height: 50px;
     color: #6859fe;
   }
   .hide {
