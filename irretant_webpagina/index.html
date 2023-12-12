@@ -10,16 +10,6 @@
 </head>
 
 <body>
-    <div id="cookiePopup" class="hide">
-        <img src="images/cookie.png"/>
-        <p class="flipX">
-          Our website uses cookies to provide your browsing experience and
-          relevant information. Before continuing to use our website, you agree &
-          accept of our <a href="https://www.youtube.com/watch?v=1dEOIFGzCPs" target="_blank">Cookie Policy & Privacy.</a> If you decline there is a Possibility of non functioning elements.
-        </p>
-        <button class="flipX" id="acceptCookie">Accept</button>
-        <button class="flipX" id="rejectCookie">Reject</button>
-      </div>
     <section class="grid_container" id="section">
         <a class="item-phone img" id="backgroundChange" id="phone" onclick="playMusic()">
             <img src="images_icons/SlideShow-Iphone.gif" alt="Slideshow" id="gif">
@@ -38,7 +28,7 @@
             the day, from breaking news to profiles on favorite tech products.</div>
         <!-- google link code -->
         <div class="button_issue">
-            <a href="#" class="grid-item icon-google">
+            <a href="#" class="grid-item icon-google flipX">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg width="176px" height="60px" viewBox="0 0 176 60" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -226,7 +216,7 @@
 
         <!-- icon apple link -->
         <div class="button_issue2">
-            <button class="grid-item icon-apple" id="appleIcon" onclick="backgroundChange()">
+            <button class="grid-item icon-apple flipX" id="appleIcon" onclick="backgroundChange()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="176" height="60" viewBox="0 0 176 60">
                     <g fill="none" fill-rule="evenodd">
                         <rect width="176" height="60" fill="#1E222B" rx="6" />
@@ -245,6 +235,19 @@
                 Sip news is build by Product Hunt and its awesome community
             </p>
         </div>
+        <section class="middle_cookie">
+            <div id="cookiePopup" class="hide">
+                <img src="images/cookie.png" />
+                <p class="flipX">
+                    Our website uses cookies to provide your browsing experience and
+                    relevant information. Before continuing to use our website, you agree &
+                    accept of our <a href="https://www.youtube.com/watch?v=1dEOIFGzCPs" target="_blank">Cookie Policy &
+                        Privacy.</a> If you decline there is a Possibility of non functioning elements.
+                </p>
+                <button class="flipX" id="acceptCookie">Accept</button>
+                <button class="flipX" id="rejectCookie">Reject</button>
+            </div>
+        </section>
 
         <a class="item-phone img item-phone-mini" id="backgroundChange" id="phone" onclick="playMusic()">
             <img src="images_icons/SlideShow-Iphone.gif" alt="Slideshow" id="gif">

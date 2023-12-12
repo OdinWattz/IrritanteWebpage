@@ -63,14 +63,19 @@
 
 }
 
-/* 0 till 550px (phones) */
+/* 0 till 722px (phones) */
 
-@media(max-width: 605px){
+@media(max-width: 722px){
     /* original last value is 18vb */
     
     .grid_container{                   
-        grid-template-rows: 5vb 15vb 20vb 23vb 10vb 10vb 10vb;
+        grid-template-rows: 5vb 15vb 10vb 13vb 10vb 10vb 10vb;
         grid-template-columns: 7% 10% 10% 20% 50%;
+    }
+
+    .middle_cookie{
+    grid-row: 2/ span 5;
+    grid-column: 7;
     }
 
     .icon-google:hover{
@@ -144,4 +149,19 @@
         grid-column: 2/ span 5;
 
     }
+
+    @media only screen and (max-width: 37.5em) {
+        #cookiePopup {
+          width: 100%;
+        }
+        .hide {
+          bottom: 2em;
+          right: 0;
+        }
+        .show {
+          right: 0;
+          bottom: 0;
+        }
+      }
+
 }

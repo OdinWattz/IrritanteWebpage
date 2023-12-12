@@ -45,14 +45,6 @@
     grid-column: 5;
     grid-row: span 7;
 }
-@keyframes rotate-btn {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(-360deg);
-    }
-  }
 
 .item-phone img:hover {
     animation: rotate-btn .1s linear infinite;
@@ -177,6 +169,15 @@ svg{
 
 }
 
+@keyframes rotate-btn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 @keyframes logo {
     from {grid-column: 2; color: yellow;}
     to {grid-column: 4; color: greenyellow;}
@@ -192,6 +193,22 @@ svg{
     50% {background-color: green;}
     75% {background-color: yellow;}
     100% {background-color: black;}
+}
+
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90def);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
 }
 
 /* Cookies */
@@ -242,46 +259,18 @@ svg{
     color: #6859fe;
   }
   .hide {
-    visibility: visible;
+    visibility: hidden;
     bottom: 0;
-    right: 2em;
+    right: 5em;
   }
   .show {
     visibility: visible;
     bottom: 2em;
     right: 2em;
   }
-  @media only screen and (max-width: 37.5em) {
-    #cookiePopup {
-      width: 100%;
-    }
-    .hide {
-      bottom: 2em;
-      right: 0;
-    }
-    .show {
-      right: 0;
-      bottom: 0;
-    }
-  }
 
 
   .flipX {
     animation: 0.8s anim-flipX ease infinite;
-  }
-  @keyframes anim-flipX {
-    0% {
-      opacity: 0;
-      transform: rotateX(90def);
-    }
-    50% {
-      opacity: 1;
-      transform: rotateX(720deg);
-    }
-    100% {
-      /* animate nothing to pause animation at the end */
-      opacity: 1;
-      transform: rotateX(720deg);
-    }
   }
   
