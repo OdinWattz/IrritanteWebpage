@@ -30,6 +30,7 @@
 }
 
 .grid-item{
+    animation: 0.8s anim-flipX ease infinite;
     display: flex;
     justify-items: flex-start;
     align-items: flex-start;
@@ -192,3 +193,95 @@ svg{
     75% {background-color: yellow;}
     100% {background-color: black;}
 }
+
+/* Cookies */
+* {
+    box-sizing: border-box;
+  }
+ 
+  #cookiePopup {
+    background-color: #ffffff;
+    position: absolute;
+    font-size: 14px;
+    max-width: 500px;
+    max-height: 275px;
+    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    padding: 2em 1.4em;
+    border-radius: 6px;
+    transition: all 0.5s ease-in;
+  }
+  #cookiePopup img {
+    display: block;
+    width: 10%;
+    height: 20%;
+    margin: auto;
+  }
+  #cookiePopup p {
+    text-align: center;
+    margin: 25px 0;
+    height: 50px;
+  }
+  #cookiePopup button {
+    background-color: #6859fe;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 0;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+  }
+  #cookiePopup a {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    color: #6859fe;
+  }
+  .hide {
+    visibility: visible;
+    bottom: 0;
+    right: 2em;
+  }
+  .show {
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+  }
+  @media only screen and (max-width: 37.5em) {
+    #cookiePopup {
+      width: 100%;
+    }
+    .hide {
+      bottom: 2em;
+      right: 0;
+    }
+    .show {
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+
+  .flipX {
+    animation: 0.8s anim-flipX ease infinite;
+  }
+  @keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+    100% {
+      /* animate nothing to pause animation at the end */
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+  }
+  
