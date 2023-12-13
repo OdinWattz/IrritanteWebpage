@@ -82,12 +82,12 @@ const checkCookie = () => {
   //Check for our cookie
   if (input[0] == "myCookieName") {
     //Hide the popup
-    popUp.classList.add("show");
-    popUp.classList.remove("hide");
-  } else {
-    //Show the popup
     popUp.classList.add("hide");
     popUp.classList.remove("show");
+  } else {
+    //Show the popup
+    popUp.classList.add("show");
+    popUp.classList.remove("hide");
   }
 };
 
