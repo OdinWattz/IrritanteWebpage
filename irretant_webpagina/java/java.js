@@ -52,7 +52,7 @@ function playMusic(){
 
 let popUp = document.getElementById("cookiePopup");
 
-//Wanneer er dus op accept geklikt wordt
+//Wanneer er dus op accept geklikt wordt, krijg je een cookie in je browser
 document.getElementById("acceptCookie").addEventListener("click", () => {
 // Hoelang de cookie geldig is: 5 minuten
   let d = new Date();
@@ -61,25 +61,17 @@ document.getElementById("acceptCookie").addEventListener("click", () => {
   //De naam van de cookie en hoelang die geldig is
   document.cookie = "myCookieName=ditismijncookie_Odin; expires = " + d + ";";
 
-  //Hide the popup
+  //Hide de popup
   popUp.classList.add("hide");
   popUp.classList.remove("show");
 });
 
-//Wanneer er op reject geklikt wordt
-// De reject doet eigenlijk helemaal niks want de pop up verdwijnt toch niet, al druk je op accept
-// Express gedaan natuurlijk
-document.getElementById("rejectCookie").addEventListener("click", () => {
-    //Hide the popup
-    popUp.classList.add("hide");
-    popUp.classList.remove("show");
-    });
 
 // Die checkt of de cookie al bestaat
 const checkCookie = () => {
-  //Read the cookie and split on "="
+  //De cookie wordt gesplitst op de = en in een array gezet
   let input = document.cookie.split("=");
-  //Check for our cookie
+  //Check voor de cookie
   if (input[0] == "myCookieName") {
     //Hide the popup
     popUp.classList.add("hide");
