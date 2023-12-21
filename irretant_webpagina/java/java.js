@@ -2,8 +2,8 @@ function getRandomPosition() {
     let screenWidth = window.innerWidth;
     let screenHeight = window.innerHeight;
 
-    let randomX = Math.floor(Math.random() * (screenWidth - 128)); 
-    let randomY = Math.floor(Math.random() * (screenHeight - 43));
+    let randomX = Math.floor(Math.random() * (screenWidth - 127)); 
+    let randomY = Math.floor(Math.random() * (screenHeight - 42));
 
     return { x: randomX, y: randomY };
 }
@@ -45,7 +45,7 @@ apple.addEventListener('click', cloneAndPositionButton);
 }
 
 function playMusic(){
-    var music = new Audio("./audio/460432__jay_you__music-elevator.wav");
+    var music = new Audio("../audio/460432__jay_you__music-elevator.wav");
     music.play();
     }
 
